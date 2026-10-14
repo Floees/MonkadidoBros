@@ -1,0 +1,389 @@
+newmtl Handle1Mtl
+Material Color
+Ka 0.0915184 0.0511221 0.0328759
+Kd 0.0915184 0.0511221 0.0328759
+Ks 0.00574233 0.00320766 0.0020628 
+
+d 1
+
+Ns 0
+
+map_Ka Handle1_diff.png
+map_Kd Handle1_diff.png
+map_d Handle1_diff.png
+
+map_Bump Handle1_nmap.png
+
+newmtl Handle3Mtl
+Material Color
+Ka 0.373615 0.368591 0.383775
+Kd 0.373615 0.368591 0.383775
+Ke 1 1 1
+Ks 0.0322335 0.0318 0.03311 
+
+d 1
+
+Ns 255
+
+map_Ka Handle3_diff.png
+map_Kd Handle3_diff.png
+map_d Handle3_diff.png
+
+map_Bump Handle3_nmap.png
+
+map_Ns Handle3_spec.png
+
+map_Ke Handle3_emap.png
+
+rbx_alphamode overlay
+
+newmtl Handle2Mtl
+Material Color
+Ka 0.373615 0.368591 0.383775
+Kd 0.373615 0.368591 0.383775
+Ke 1 1 1
+Ks 0.0322335 0.0318 0.03311 
+
+d 1
+
+Ns 255
+
+map_Ka Handle2_diff.png
+map_Kd Handle2_diff.png
+map_d Handle2_diff.png
+
+map_Bump Handle2_nmap.png
+
+map_Ns Handle2_spec.png
+
+map_Ke Handle2_emap.png
+
+rbx_alphamode overlay
+
+newmtl Rolfmagnus14Mtl
+Material Color
+Ka 0.425905 0.230998 0.116576
+Kd 0.425905 0.230998 0.116576
+Ke 1 1 1
+Ks 0.0367448 0.0199293 0.0100575 
+
+d 1
+
+Ns 255
+
+map_Ka Rolfmagnus1_diff.png
+map_Kd Rolfmagnus1_diff.png
+map_d Rolfmagnus1_diff.png
+
+map_Bump Rolfmagnus1_nmap.png
+
+map_Ns Rolfmagnus1_spec.png
+
+map_Ke Rolfmagnus14_emap.png
+
+rbx_alphamode overlay
+
+newmtl Handle4Mtl
+Material Color
+Ka 0.373615 0.368591 0.383775
+Kd 0.373615 0.368591 0.383775
+Ks 0.0234425 0.0231273 0.02408 
+
+d 1
+
+Ns 0
+
+map_Ka Handle4_diff.png
+map_Kd Handle4_diff.png
+map_d Handle4_diff.png
+
+newmtl Rolfmagnus4Mtl
+Material Color
+Ka 0.425905 0.230998 0.116576
+Kd 0.425905 0.230998 0.116576
+Ke 1 1 1
+Ks 0.0367448 0.0199293 0.0100575 
+
+d 1
+
+Ns 255
+
+map_Ka Rolfmagnus1_diff.png
+map_Kd Rolfmagnus1_diff.png
+map_d Rolfmagnus1_diff.png
+
+map_Bump Rolfmagnus1_nmap.png
+
+map_Ns Rolfmagnus1_spec.png
+
+map_Ke Rolfmagnus4_emap.png
+
+rbx_alphamode overlay
+
+newmtl Rolfmagnus3Mtl
+Material Color
+Ka 0.425905 0.230998 0.116576
+Kd 0.425905 0.230998 0.116576
+Ke 1 1 1
+Ks 0.0367448 0.0199293 0.0100575 
+
+d 1
+
+Ns 255
+
+map_Ka Rolfmagnus1_diff.png
+map_Kd Rolfmagnus1_diff.png
+map_d Rolfmagnus1_diff.png
+
+map_Bump Rolfmagnus1_nmap.png
+
+map_Ns Rolfmagnus1_spec.png
+
+map_Ke Rolfmagnus3_emap.png
+
+rbx_alphamode overlay
+
+newmtl Rolfmagnus9Mtl
+Material Color
+Ka 0.425905 0.230998 0.116576
+Kd 0.425905 0.230998 0.116576
+Ke 1 1 1
+Ks 0.0367448 0.0199293 0.0100575 
+
+d 1
+
+Ns 255
+
+map_Ka Rolfmagnus1_diff.png
+map_Kd Rolfmagnus1_diff.png
+map_d Rolfmagnus1_diff.png
+
+map_Bump Rolfmagnus1_nmap.png
+
+map_Ns Rolfmagnus1_spec.png
+
+map_Ke Rolfmagnus9_emap.png
+
+rbx_alphamode overlay
+
+newmtl Rolfmagnus1Mtl
+Material Color
+Ka 0.425905 0.230998 0.116576
+Kd 0.425905 0.230998 0.116576
+Ke 1 1 1
+Ks 0.0367448 0.0199293 0.0100575 
+
+d 1
+
+Ns 255
+
+map_Ka Rolfmagnus1_diff.png
+map_Kd Rolfmagnus1_diff.png
+map_d Rolfmagnus1_diff.png
+
+map_Bump Rolfmagnus1_nmap.png
+
+map_Ns Rolfmagnus1_spec.png
+
+map_Ke Rolfmagnus1_emap.png
+
+rbx_alphamode overlay
+
+newmtl Rolfmagnus2Mtl
+Material Color
+Ka 0.425905 0.230998 0.116576
+Kd 0.425905 0.230998 0.116576
+Ke 1 1 1
+Ks 0.0367448 0.0199293 0.0100575 
+
+d 1
+
+Ns 255
+
+map_Ka Rolfmagnus1_diff.png
+map_Kd Rolfmagnus1_diff.png
+map_d Rolfmagnus1_diff.png
+
+map_Bump Rolfmagnus1_nmap.png
+
+map_Ns Rolfmagnus1_spec.png
+
+map_Ke Rolfmagnus2_emap.png
+
+rbx_alphamode overlay
+
+newmtl Rolfmagnus5Mtl
+Material Color
+Ka 0.425905 0.230998 0.116576
+Kd 0.425905 0.230998 0.116576
+Ke 1 1 1
+Ks 0.0367448 0.0199293 0.0100575 
+
+d 1
+
+Ns 255
+
+map_Ka Rolfmagnus1_diff.png
+map_Kd Rolfmagnus1_diff.png
+map_d Rolfmagnus1_diff.png
+
+map_Bump Rolfmagnus1_nmap.png
+
+map_Ns Rolfmagnus1_spec.png
+
+map_Ke Rolfmagnus5_emap.png
+
+rbx_alphamode overlay
+
+newmtl Rolfmagnus6Mtl
+Material Color
+Ka 0.425905 0.230998 0.116576
+Kd 0.425905 0.230998 0.116576
+Ke 1 1 1
+Ks 0.0367448 0.0199293 0.0100575 
+
+d 1
+
+Ns 255
+
+map_Ka Rolfmagnus1_diff.png
+map_Kd Rolfmagnus1_diff.png
+map_d Rolfmagnus1_diff.png
+
+map_Bump Rolfmagnus1_nmap.png
+
+map_Ns Rolfmagnus1_spec.png
+
+map_Ke Rolfmagnus6_emap.png
+
+rbx_alphamode overlay
+
+newmtl Rolfmagnus7Mtl
+Material Color
+Ka 0.425905 0.230998 0.116576
+Kd 0.425905 0.230998 0.116576
+Ke 1 1 1
+Ks 0.0367448 0.0199293 0.0100575 
+
+d 1
+
+Ns 255
+
+map_Ka Rolfmagnus1_diff.png
+map_Kd Rolfmagnus1_diff.png
+map_d Rolfmagnus1_diff.png
+
+map_Bump Rolfmagnus1_nmap.png
+
+map_Ns Rolfmagnus1_spec.png
+
+map_Ke Rolfmagnus7_emap.png
+
+rbx_alphamode overlay
+
+newmtl Rolfmagnus8Mtl
+Material Color
+Ka 0.425905 0.230998 0.116576
+Kd 0.425905 0.230998 0.116576
+Ke 1 1 1
+Ks 0.0367448 0.0199293 0.0100575 
+
+d 1
+
+Ns 255
+
+map_Ka Rolfmagnus1_diff.png
+map_Kd Rolfmagnus1_diff.png
+map_d Rolfmagnus1_diff.png
+
+map_Bump Rolfmagnus1_nmap.png
+
+map_Ns Rolfmagnus1_spec.png
+
+map_Ke Rolfmagnus8_emap.png
+
+rbx_alphamode overlay
+
+newmtl Rolfmagnus10Mtl
+Material Color
+Ka 0.425905 0.230998 0.116576
+Kd 0.425905 0.230998 0.116576
+Ks 0.0267235 0.014494 0.00731456 
+
+d 1
+
+Ns 0
+
+map_Ka Rolfmagnus10_diff.png
+map_Kd Rolfmagnus10_diff.png
+map_d Rolfmagnus10_diff.png
+
+newmtl Rolfmagnus11Mtl
+Material Color
+Ka 0.425905 0.230998 0.116576
+Kd 0.425905 0.230998 0.116576
+Ke 1 1 1
+Ks 0.0367448 0.0199293 0.0100575 
+
+d 1
+
+Ns 255
+
+map_Ka Rolfmagnus1_diff.png
+map_Kd Rolfmagnus1_diff.png
+map_d Rolfmagnus1_diff.png
+
+map_Bump Rolfmagnus1_nmap.png
+
+map_Ns Rolfmagnus1_spec.png
+
+map_Ke Rolfmagnus11_emap.png
+
+rbx_alphamode overlay
+
+newmtl Rolfmagnus12Mtl
+Material Color
+Ka 0.425905 0.230998 0.116576
+Kd 0.425905 0.230998 0.116576
+Ke 1 1 1
+Ks 0.0367448 0.0199293 0.0100575 
+
+d 1
+
+Ns 255
+
+map_Ka Rolfmagnus1_diff.png
+map_Kd Rolfmagnus1_diff.png
+map_d Rolfmagnus1_diff.png
+
+map_Bump Rolfmagnus1_nmap.png
+
+map_Ns Rolfmagnus1_spec.png
+
+map_Ke Rolfmagnus12_emap.png
+
+rbx_alphamode overlay
+
+newmtl Rolfmagnus13Mtl
+Material Color
+Ka 0.425905 0.230998 0.116576
+Kd 0.425905 0.230998 0.116576
+Ke 1 1 1
+Ks 0.0367448 0.0199293 0.0100575 
+
+d 1
+
+Ns 255
+
+map_Ka Rolfmagnus1_diff.png
+map_Kd Rolfmagnus1_diff.png
+map_d Rolfmagnus1_diff.png
+
+map_Bump Rolfmagnus1_nmap.png
+
+map_Ns Rolfmagnus1_spec.png
+
+map_Ke Rolfmagnus13_emap.png
+
+rbx_alphamode overlay
+
