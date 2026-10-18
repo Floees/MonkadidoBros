@@ -35,6 +35,10 @@ public class PlayerController : MonoBehaviour
         {
             Jump();
         }
+        if (k.sKey.wasPressedThisFrame) 
+        {
+            Slam();
+        }
 
         float x = (k.dKey.isPressed ? 1 : 0) - (k.aKey.isPressed ? 1 : 0);
         float move = MoveSpeed * x;
@@ -68,5 +72,13 @@ public class PlayerController : MonoBehaviour
             Rb.AddForceY(JumpHeight, ForceMode2D.Impulse);
         }
         
+    }
+    void Slam() 
+    {
+        int groundLayer = LayerMask.GetMask("Ground");
+        int wallLayer = LayerMask.GetMask("Wall");
+
+        if (!BC.IsTouchingLayers(groundLayer))
+            Rb.AddForceY(-JumpHeight, ForceMode2D.Impulse);
     }
 }

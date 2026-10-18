@@ -8,6 +8,7 @@ public class Hazard : MonoBehaviour
         {
             //other.GetComponent<PlayerHealth>().TakeDamage(1);
             other.transform.position = new Vector3(0, 0, 0);
+            GameEvents.current.Respawn();
         }
     }
 }
