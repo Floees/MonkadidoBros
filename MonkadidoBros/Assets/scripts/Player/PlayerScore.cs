@@ -7,17 +7,15 @@ public class PlayerScore : MonoBehaviour
     public int Attempts, Score = 0;
     public string playerName, TimeText;
     float currentTime;
-    bool stopwatchRunning = true;
+    public bool stopwatchRunning = true;
 
     private void Start()
     {
         currentTime = 0;
-        GameEvents.current.onSocialScoreChanged += OnSocialScoreGained;
         GameEvents.current.onRespawn += OnRespawn;
     }
     private void OnDisable()
     {
-        GameEvents.current.onSocialScoreChanged -= OnSocialScoreGained;
         GameEvents.current.onRespawn -= OnRespawn;
     }
     private void Update()
@@ -26,10 +24,6 @@ public class PlayerScore : MonoBehaviour
     }
 
 
-    private void OnSocialScoreGained() 
-    {
-        Score = +1000;
-    }
     private void OnSecondPassed()
     {
         if (!stopwatchRunning)

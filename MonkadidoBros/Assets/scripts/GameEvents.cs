@@ -7,6 +7,7 @@ public class GameEvents : MonoBehaviour
     public event Action onSocialScoreChanged;
     public event Action onSecondPassed;
     public event Action onRespawn;
+    public event Action onGoalReached;
 
 
     private void Awake()
@@ -24,5 +25,9 @@ public class GameEvents : MonoBehaviour
     public void Respawn()
     {
         onRespawn?.Invoke();
+    }
+    public void GoalReached() 
+    {
+        onGoalReached?.Invoke();
     }
 }
