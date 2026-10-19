@@ -6,6 +6,5 @@ public class Menu : MonoBehaviour
     public void StartButton() 
     {
         SceneManager.LoadSceneAsync("SampleScene");
-        SceneManager.UnloadSceneAsync("Untitled");
     }
 }
