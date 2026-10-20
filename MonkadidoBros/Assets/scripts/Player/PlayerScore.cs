@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -7,33 +8,35 @@ public class PlayerScore : MonoBehaviour
 {
     public int Attempts, Score = 0;
     public string playerName, TimeText;
-    float currentTime;
     public bool stopwatchRunning = true;
     public TimeSpan time;
 
+    private Stopwatch stopwatch = new Stopwatch();
+
     private void Start()
     {
-        currentTime = 0;
-    }
-    private void OnDisable()
-    {
+        stopwatch.Start();
     }
     private void Update()
     {
-        OnSecondPassed();
+        TimePassed();
     }
 
 
-    private void OnSecondPassed()
+    private void TimePassed()
     {
         if (!stopwatchRunning)
         {
+            stopwatch.Stop();
             return;
         }
-        
-        currentTime += Time.deltaTime;
-        time = TimeSpan.FromSeconds(currentTime);
-        TimeText = time.ToString(@"mm\:ss");//time.Minutes.ToString("D2") + ":" + time.Seconds.ToString("D2");
+
+        if (!stopwatch.IsRunning)
+            stopwatch.Start();
+
+        time = stopwatch.Elapsed;
+        TimeText = time.ToString(@"mm\:ss");
+
         GameEvents.current.SecondPassed();
 
     }
