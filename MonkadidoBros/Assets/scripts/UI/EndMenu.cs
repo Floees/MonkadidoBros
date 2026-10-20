@@ -11,6 +11,8 @@ public class EndMenu : MonoBehaviour
     PlayerScore P;
     private void Start()
     {
+        RemoveCamera();
+
         P = FindAnyObjectByType<PlayerScore>();
         if (LeaderBoard.text != string.Empty)
             ScoreBackground.SetActive(true); // load in scores from api
@@ -18,9 +20,10 @@ public class EndMenu : MonoBehaviour
     }
     public void AgainButton() 
     {
+        if(P != null)
         Destroy(P);
+
         SceneManager.LoadSceneAsync("MenuScene");
-        SceneManager.UnloadSceneAsync("Finished");
     }
     public void SaveScore() 
     {
@@ -42,5 +45,9 @@ public class EndMenu : MonoBehaviour
     public void QuitGame() 
     {
         Application.Quit();
+    }
+    public void RemoveCamera() 
+    {
+        GameEvents.current.Finish();
     }
 }

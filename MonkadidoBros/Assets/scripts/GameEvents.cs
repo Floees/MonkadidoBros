@@ -8,6 +8,7 @@ public class GameEvents : MonoBehaviour
     public event Action onSecondPassed;
     public event Action onRespawn;
     public event Action onGoalReached;
+    public event Action onFinish;
 
 
     private void Awake()
@@ -29,5 +30,9 @@ public class GameEvents : MonoBehaviour
     public void GoalReached() 
     {
         onGoalReached?.Invoke();
+    }
+    public void Finish() 
+    {
+        onFinish?.Invoke();
     }
 }

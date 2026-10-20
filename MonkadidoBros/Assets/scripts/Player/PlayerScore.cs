@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -8,15 +9,14 @@ public class PlayerScore : MonoBehaviour
     public string playerName, TimeText;
     float currentTime;
     public bool stopwatchRunning = true;
+    public TimeSpan time;
 
     private void Start()
     {
         currentTime = 0;
-        GameEvents.current.onRespawn += OnRespawn;
     }
     private void OnDisable()
     {
-        GameEvents.current.onRespawn -= OnRespawn;
     }
     private void Update()
     {
@@ -32,13 +32,14 @@ public class PlayerScore : MonoBehaviour
         }
         
         currentTime += Time.deltaTime;
-        TimeSpan time = TimeSpan.FromSeconds(currentTime);
-        TimeText = time.Minutes.ToString("D2") + ":" + time.Seconds.ToString("D2");
+        time = TimeSpan.FromSeconds(currentTime);
+        TimeText = time.ToString(@"mm\:ss");//time.Minutes.ToString("D2") + ":" + time.Seconds.ToString("D2");
         GameEvents.current.SecondPassed();
 
     }
-    private void OnRespawn() 
+    public void Respawn() 
     {
         Attempts++;
+        GameEvents.current.Respawn();
     }
 }

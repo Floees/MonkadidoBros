@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class Hazard : MonoBehaviour
@@ -6,9 +7,9 @@ public class Hazard : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //other.GetComponent<PlayerHealth>().TakeDamage(1);
             other.transform.position = new Vector3(0, 0, 0);
-            GameEvents.current.Respawn();
+            other.GetComponent<PlayerScore>().Respawn();
         }
+
     }
 }

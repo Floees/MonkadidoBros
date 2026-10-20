@@ -2,15 +2,20 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
-        
+        GameEvents.current.onFinish += RemoveCamera;
+    }
+    private void OnDisable()
+    {
+        GameEvents.current.onFinish -= RemoveCamera;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void RemoveCamera() 
     {
-        
+        Camera pc = this.GetComponentInChildren<Camera>();
+        AudioListener listener = pc.GetComponent<AudioListener>();
+        Destroy(pc);
+        Destroy(listener);
     }
 }
